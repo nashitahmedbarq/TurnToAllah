@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Override the default value 14sp if you want do it!-->
+    <dimen name="material_drawer_item_primary_text">16sp</dimen>
+
+
+</resources>

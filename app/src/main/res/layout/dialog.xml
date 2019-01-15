@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/screenshot_dialog_outer"
+    android:paddingLeft="16.0dip"
+    android:paddingRight="16.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#413c3c"
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:textSize="14.0sp"
+        android:id="@+id/shareScreenshotHeading"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginBottom="4.0dip"
+        android:text="SHARE THIS SCREENSHOT"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/screenshot_image_outer"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_below="@id/shareScreenshotHeading"
+        android:layout_centerHorizontal="true">
+
+
+        <ImageView
+            android:id="@+id/screenshot_blur_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="false"
+           android:visibility="visible"
+            android:background="@drawable/screenshot"
+            />
+
+        <View
+            android:background="#77000000"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/app_name_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <RelativeLayout
+                android:gravity="center_horizontal"
+                android:id="@+id/app_name_logo1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <TextView
+                    android:id="@+id/turnToAllahHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="/ Turn To Allah"
+                    android:textColor="#000000"
+                    android:textSize="12.0sp"
+                    android:visibility="gone"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shareBtnDialog"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Share"
+        android:layout_below="@id/screenshot_image_outer"
+        android:textColor="#FFFFFF"
+        android:background="@color/transparent"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelBtnDialog"
+        android:text="Cancel"
+        android:layout_below="@id/screenshot_image_outer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/transparent"
+        android:textColor="#FFFFFF"
+
+        />
+
+</RelativeLayout>
